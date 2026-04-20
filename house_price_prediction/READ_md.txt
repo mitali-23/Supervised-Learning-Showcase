@@ -1,0 +1,151 @@
+# 🏡 House Price Prediction using Linear Regression
+
+## 📌 Overview
+
+This project demonstrates a simple implementation of **Linear Regression** using Python to predict house prices based on area. It walks through data creation, visualization, model training, prediction, and evaluation.
+
+The goal is to understand how machine learning models can be applied to real-world regression problems in a simple and intuitive way.
+
+---
+
+## 📂 Project Structure
+
+```id="atulrq"
+├── house_price_prediction.ipynb   # Jupyter Notebook with full implementation
+├── README.md                     # Project documentation
+```
+
+---
+
+## ⚙️ Technologies Used
+
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+---
+
+## 📊 Dataset
+
+The dataset is manually created and consists of two features:
+
+* **Area (sq ft)**
+* **Price (USD)**
+
+### Sample Data:
+
+| Area | Price  |
+| ---- | ------ |
+| 1000 | 200000 |
+| 1500 | 300000 |
+| 2000 | 400000 |
+| ...  | ...    |
+
+---
+
+## 🚀 Steps Implemented
+
+### 1. Import Libraries
+
+Essential libraries for data manipulation, visualization, and modeling are imported.
+
+### 2. Create Dataset
+
+A dictionary is used to define house areas and their corresponding prices, which is converted into a Pandas DataFrame.
+
+### 3. Data Visualization
+
+A scatter plot is used to visualize the relationship between:
+
+* Area (independent variable)
+* Price (dependent variable)
+
+### 4. Model Training
+
+A **Linear Regression model** from Scikit-learn is used:
+
+* Input: Area
+* Output: Price
+
+### 5. Regression Line
+
+The best-fit line is plotted over the scatter plot to visualize the model's predictions.
+
+### 6. Prediction
+
+The model is used to predict the price for a house with a given area:
+
+```python id="gogs6x"
+reg.predict([[2500]])
+```
+
+### 7. Model Evaluation
+
+Two key metrics are calculated:
+
+* **Mean Squared Error (MSE)**
+* **R-squared (R² Score)**
+
+These help evaluate how well the model fits the data.
+
+---
+
+## 📈 Results
+
+* The model successfully learns a linear relationship between area and price.
+* Predictions are reasonably accurate for this simple dataset.
+* R² score indicates how well the model explains the variance.
+
+---
+
+## 📷 Visualization
+
+The project includes:
+
+* Scatter plot of actual data points
+* Regression line showing predicted trend
+
+---
+
+## 🧠 Key Learnings
+
+* Basics of Linear Regression
+* Data visualization techniques
+* Model training and prediction
+* Performance evaluation using MSE and R²
+
+---
+
+## 🔮 Future Improvements
+
+* Use a larger, real-world dataset
+* Add more features (bedrooms, location, etc.)
+* Try advanced models (Polynomial Regression, Decision Trees)
+* Deploy as a web app
+
+---
+
+## ▶️ Usage Instructions
+
+1. Ensure all required libraries are installed.
+2. Open the Jupyter Notebook file.
+3. Run all cells step by step to see the workflow.
+4. Modify input values to test different predictions.
+
+---
+
+## 📌 Use Cases
+
+* Real estate price estimation
+* Learning basic machine learning concepts
+* Academic projects and assignments
+* Data visualization practice
+
+---
+
+## 👨‍💻 Author
+
+Developed as a beginner-friendly machine learning project to understand regression concepts.
